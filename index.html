@@ -5,9 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House</title>
     <link rel="shortcut icon" href="tea-house-resources/images/hot-coffee.png" type="image/x-icon">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/882495c089.js" crossorigin="anonymous"></script>
+    <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    
+    <style>
+    *{
+        font-family: "Manrope", serif;
+    }
+    </style>
+  <!-- header -->
+    <header class="w-[80%] mx-auto lg:flex mt-10 gap-4">
+        <div>
+          <h1 class="text-[#1C1C1C] text-5xl font-extrabold mb-4">It's good <br>
+            tea time at The <br> Tea House</h1>
+            <p class="text-[#777777] text-base font-medium w-82 pr-8 mb-4">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+            <button class=" text-[#FFFFFF] text-base font-bold bg-gradient-to-r from-[#FF0000] to-[#FF8938] px-6 py-3 rounded-[0.6rem]">Explore More  <i class=" -rotate-45 ml-1 fa-solid fa-arrow-right"> </i> </button>
+        </div>
+        <div class=" relative flex justify-center flex-col mt-6">
+         <img src="tea-house-resources/images/banner.png" alt="">
+           <div class="absolute mt-[16.5rem] ml-14 bg-white flex items-center gap-3 shadow-[#0000000f] shadow-sm px-4 py-2 w-fit rounded">
+            <i class="text-[#FFDC64] text-3xl fa-solid fa-star"></i>
+             <div> 
+                <h3 class="text-[#1C1C1C] font-extrabold text-[1.5rem]">5.00 </h3>
+                <p class="text-[#777777] text-sm font-semibold">Trust Pilot Ratings</p>
+            </div>
+           </div>
+        </div>
+    </header>
+
+    <!-- main -->
+     <main>
+        <!-- product section -->
+        <section class="w-[80%] mx-auto flex flex-col mt-10 gap-4 text-center">
+          <h1>Our Featured Products</h1>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+          
+           <div class=" lg:flex lg:flex-row flex flex-col gap-6 grid-cols-1 items-center w-[100%]" ><!-- card container -->
+
+               <div  class="flex justify-center flex-col">   <!-- card -->
+                 <img src="tea-house-resources/images/tea-1.png" alt="">
+                 <h2>Milk Tea</h2>
+                 <p>Creamer could be replaced by fresh milk</p>
+               </div>
+               <div>   <!-- card -->
+                 <img src="tea-house-resources/images/tea-2.png" alt="">
+                 <h2>Black Tea</h2>
+                 <p>Creamer could be replaced by fresh milk</p>
+               </div>
+               <div>   <!-- card -->
+                <img src="tea-house-resources/images/tea-3.png" alt="">
+                <h2>Lemon Tea</h2>
+                <p>Creamer could be replaced by fresh milk</p>
+              </div>
+              <div>   <!-- card -->
+                <img src="tea-house-resources/images/tea-4.png" alt="">
+                <h2>Green Tea</h2>
+                <p>Creamer could be replaced by fresh milk</p>
+              </div>
+           </div>
+        </section>
+     </main>
 </body>
 </html>
